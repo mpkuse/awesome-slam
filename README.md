@@ -56,19 +56,46 @@ Simultaneous Localization and Mapping, also known as SLAM, is the computational 
 
 
 ### Papers
+
+#### Surveys
 - [Past, Present, and Future of Simultaneous Localization And Mapping: Towards the Robust-Perception Age](https://arxiv.org/abs/1606.05830) (2016)
-- [Direct Sparse Odometry](https://arxiv.org/abs/1607.02565) (2016)
+- [Robotic Mapping: A Survey](http://robots.stanford.edu/papers/thrun.mapping-tr.pdf)
+
+#### SLAM Systems
 - [Modelling Uncertainty in Deep Learning for Camera Relocalization](https://arxiv.org/abs/1509.05909) (2016)
 - [Large-Scale Cooperative 3D Visual-Inertial Mapping in a Manhattan World](http://mars.cs.umn.edu/papers/CM_line.pdf) (2016)
 - [Towards Lifelong Feature-Based Mapping in Semi-Static Environments](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44821.pdf) (2016)
-- [Tree-Connectivity: Evaluating the Graphical Structure of SLAM](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7487264) (2016)
 - [Visual-Inertial Direct SLAM](webdiis.unizar.es/~jcivera/papers/concha_etal_icra16.pdf) (2016)
 - [A Unified Resource-Constrained Framework for Graph SLAM](people.csail.mit.edu/lpaull/publications/Paull_ICRA_2016.pdf) (2016)
 - [Multi-Level Mapping: Real-time Dense Monocular SLAM](https://groups.csail.mit.edu/rrg/papers/greene_icra16.pdf) (2016)
+- [Simulataneous Localization and Mapping with the Extended Kalman Filter](http://www.iri.upc.edu/people/jsola/JoanSola/objectes/curs_SLAM/SLAM2D/SLAM%20course.pdf)
+- [VINS-MONO](https://ieeexplore.ieee.org/document/8421746)
+
+
+#### Pose Graph Solvers
+- [Tree-Connectivity: Evaluating the Graphical Structure of SLAM](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7487264) (2016)
 - [Lagrangian duality in 3D SLAM: Verification techniques and optimal solutions](http://arxiv.org/abs/1506.00746) (2015)
 - [A Solution to the Simultaneous Localization and Map Building (SLAM) Problem](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=938381&tag=1)
-- [Simulataneous Localization and Mapping with the Extended Kalman Filter](http://www.iri.upc.edu/people/jsola/JoanSola/objectes/curs_SLAM/SLAM2D/SLAM%20course.pdf)
-- [Robotic Mapping: A Survey](http://robots.stanford.edu/papers/thrun.mapping-tr.pdf)
+- [Switchable constraints for robust pose graph SLAM](https://ieeexplore.ieee.org/document/6385590) (2012)
+- [Inference on networks of mixtures for robust robot mapping](https://ieeexplore.ieee.org/document/6577958) (2013)
+- [Robust Map Optimization using Dynamic Covariance Scaling](http://www2.informatik.uni-freiburg.de/~spinello/agarwalICRA13.pdf) (2016)
+
+
+#### Feature Trackers and Odometry Estimation
+- [Direct Sparse Odometry](https://arxiv.org/abs/1607.02565) (2016)
+- [Edge Alignment Visual Odometry](https://ieeexplore.ieee.org/document/7487181) (2016)
+
+#### Sensor Fusion
+
+
+#### Place Recognition / Loop Detection
+- FABMAP2 [PDF](http://www.robots.ox.ac.uk/~mjc/Papers/FABMAP2_RSS_2009.pdf) [Code-OpenFABMAP](https://code.google.com/archive/p/openfabmap/)
+- Bag-of-Binary-Words (DBOW2) [PDF](https://ieeexplore.ieee.org/document/6202705)  [Code](https://github.com/dorian3d/DBoW2)
+- IBOW-LCD [PDF](https://arxiv.org/abs/1802.05909)  [Code](https://github.com/emiliofidalgo/ibow-lcd)
+- SeqSLAM [PDF](https://ieeexplore.ieee.org/abstract/document/6224623)
+
+#### Mapping
+- [Real‐time dense mapping for online processing and navigation](https://onlinelibrary.wiley.com/doi/10.1002/rob.21868)
 
 
 ### Researchers
@@ -103,14 +130,19 @@ Simultaneous Localization and Mapping, also known as SLAM, is the computational 
 - [Gamini Dissanayake](http://www.uts.edu.au/staff/gamini.dissanayake)
 - [Shoudong Huang](http://services.eng.uts.edu.au/~sdhuang/)
 
+#### Asia
+- [Shaojie Shen](http://uav.ust.hk/)
 
 ### Datasets
-
-1.  [Intel Research Lab (Seattle)](http://kaspar.informatik.uni-freiburg.de/~slamEvaluation/datasets/intel.clf)
+- [Intel Research Lab (Seattle)](http://kaspar.informatik.uni-freiburg.de/~slamEvaluation/datasets/intel.clf)
+- [ETHZ EuroC Dataset](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+- [TUM Visual Inertial Dataset](https://vision.in.tum.de/data/datasets/visual-inertial-dataset)
+- UPenn - [Penncosyvio](https://github.com/daniilidis-group/penncosyvio)
+- [ADVIO](https://github.com/AaltoVision/ADVIO) ARKIT, Tango logging.
+- HKUST UAV LAB MyntEye (Stereo+IMU) [One-drive-link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/mpkuse_connect_ust_hk/EkTisuLkXLFBs_WHYkxoH2oBeVIkdLc3-5a_t1J9c_4wkg?e=h9cifx)
 
 
 ### Code
-
 1.  [ORB-SLAM](https://github.com/raulmur/ORB_SLAM)  
 2.  [LSD-SLAM](https://github.com/tum-vision/lsd_slam)
 3.  [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
@@ -118,7 +150,8 @@ Simultaneous Localization and Mapping, also known as SLAM, is the computational 
 5.  [SVO: Semi-Direct Monocular Visual Odometry](https://github.com/uzh-rpg/rpg_svo)
 6.  [G2O: General Graph Optimization](https://github.com/RainerKuemmerle/g2o)
 7.  [RGBD-SLAM](https://github.com/felixendres/rgbdslam_v2)
-
+8.  [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
+9.  [Ceres-Solver: A non-linear least squares optimizer](https://github.com/ceres-solver/ceres-solver)
 
 ### Miscellaneous
 
